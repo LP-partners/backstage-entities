@@ -10,7 +10,7 @@ metadata:
     - url: https://meta.wikimedia.org/wiki/
       title: Intranet
 spec:
-  children: [pde]
+  children: [pde,dpp,pf]
   type: department
   profile:
     displayName: Conversational Platform Verticals
@@ -28,13 +28,13 @@ metadata:
     - url: https://meta.wikimedia.org/wiki/
       title: Intranet
 spec:
-  children: []
   type: team
   profile:
     displayName: Payments & Data Exchange
     email: pde@example.com
     picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
   parent: cpv
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -47,18 +47,18 @@ metadata:
     - url: https://meta.wikimedia.org/wiki/
       title: Intranet
 spec:
-  children: []
   type: team
   profile:
     displayName: Data Protection & Privacy
     email: dpp@example.com
     picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
   parent: cpv
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: platform-foundation
+  name: pf
   description: Platform Foundation
   links:
     - url: http://www.acme.com/
@@ -66,10 +66,10 @@ metadata:
     - url: https://meta.wikimedia.org/wiki/
       title: Intranet
 spec:
-  children: []
   type: team
   profile:
     displayName: Platform Foundation
     email: pf@example.com
     picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
   parent: cpv
+  children: []
