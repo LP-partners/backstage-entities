@@ -1,0 +1,7 @@
+catalog:
+  rules:
+    - allow: [Component, System, API, Group, User, Resource, Location]
+  locations:
+    # Backstage example components
+    - type: url
+      target: https://github.com/LP-partners/backstage-entities/blob/master/data/groups.yml
