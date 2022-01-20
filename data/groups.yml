@@ -1,11 +1,37 @@
 ---
 apiVersion: backstage.io/v1alpha1
-kind: User
+kind: Group
 metadata:
-  name: hamza.waqas
+  name: cpv
+  description: Conversational Platform Verticals
+  links:
+    - url: http://www.acme.com/
+      title: Website
+    - url: https://meta.wikimedia.org/wiki/
+      title: Intranet
 spec:
+  type: department
   profile:
-    # Intentional no displayName for testing
-    email: hwaqas@liveperson.com
-    picture: https://avatars.dicebear.com/api/avataaars/breanna-davison@example.com.svg?background=%23fff
-  memberOf: [team-a]
+    displayName: Conversational Platform Verticals
+    email: cpv@example.com
+    picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
+---
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: pde
+  description: Payments & Data Exchange
+  links:
+    - url: http://www.acme.com/
+      title: Website
+    - url: https://meta.wikimedia.org/wiki/
+      title: Intranet
+spec:
+  type: team
+  profile:
+    displayName: Payments & Data Exchange
+    email: pde@example.com
+    picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
+  children: [cpv]
+---
