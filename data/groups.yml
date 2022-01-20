@@ -28,9 +28,48 @@ metadata:
     - url: https://meta.wikimedia.org/wiki/
       title: Intranet
 spec:
+  children: []
   type: team
   profile:
     displayName: Payments & Data Exchange
     email: pde@example.com
+    picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
+  parent: cpv
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dpp
+  description: Data Protection & Privacy
+  links:
+    - url: http://www.acme.com/
+      title: Website
+    - url: https://meta.wikimedia.org/wiki/
+      title: Intranet
+spec:
+  children: []
+  type: team
+  profile:
+    displayName: Data Protection & Privacy
+    email: dpp@example.com
+    picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
+  parent: cpv
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: platform-foundation
+  description: Platform Foundation
+  links:
+    - url: http://www.acme.com/
+      title: Website
+    - url: https://meta.wikimedia.org/wiki/
+      title: Intranet
+spec:
+  children: []
+  type: team
+  profile:
+    displayName: Platform Foundation
+    email: pf@example.com
     picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
   parent: cpv
