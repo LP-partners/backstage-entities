@@ -15,7 +15,7 @@ spec:
     displayName: Conversational Platform Verticals
     email: cpv@example.com
     picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
-  children: []
+  children: [pde]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -33,4 +33,4 @@ spec:
     displayName: Payments & Data Exchange
     email: pde@example.com
     picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
-  children: [cpv]
+  parent: cpv
